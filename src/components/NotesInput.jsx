@@ -1,5 +1,5 @@
 import React from "react";
-import CharacterLimit from './CharacterLimit';
+import CharacterLimit from "./CharacterLimit";
 
 export default class NotesInput extends React.Component {
   constructor() {

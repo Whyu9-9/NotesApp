@@ -7,7 +7,7 @@ function NotesList({
   onArchived,
   onRemoveArchived,
   activeData,
-  archiveData
+  archiveData,
 }) {
   return (
     <>

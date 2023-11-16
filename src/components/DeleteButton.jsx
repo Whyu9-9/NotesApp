@@ -2,7 +2,9 @@ import React from "react";
 
 function deleteButton({ id, onDelete }) {
   const handleDelete = () => {
-    const shouldDelete = window.confirm("Are you sure you want to delete this note?");
+    const shouldDelete = window.confirm(
+      "Are you sure you want to delete this note?"
+    );
     if (shouldDelete) {
       onDelete(id);
     }

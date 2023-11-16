@@ -76,9 +76,11 @@ export default class NotesApp extends React.Component {
   };
 
   render() {
-    const searchData = !this.state.search ? this.state.notes : this.state.notes.filter((note) =>
-      note.title.toLowerCase().includes(this.state.search)
-    );
+    const searchData = !this.state.search
+      ? this.state.notes
+      : this.state.notes.filter((note) =>
+          note.title.toLowerCase().includes(this.state.search)
+        );
     const activeData = searchData.filter((note) => !note.archived);
     const archiveData = searchData.filter((note) => note.archived);
 
